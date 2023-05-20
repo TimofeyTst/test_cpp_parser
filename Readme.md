@@ -16,6 +16,7 @@
 ## Запуск программы
 В корне проекта:
 ```
+    cd lexer 
     antlr4 -Dlanguage=Python3 CPPFunction.g4
     python3 main.py test/first.txt
 ```

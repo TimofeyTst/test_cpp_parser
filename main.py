@@ -1,7 +1,7 @@
 import sys
-from CPPFunctionLexer import CPPFunctionLexer
-from CPPFunctionParser import CPPFunctionParser
-from CPPFunctionErrorListener import CPPFunctionErrorListener
+from lexer.CPPFunctionLexer import CPPFunctionLexer
+from lexer.CPPFunctionParser import CPPFunctionParser
+from lexer.CPPFunctionErrorListener import CPPFunctionErrorListener
 from antlr4 import *
 
 def main(argv):
