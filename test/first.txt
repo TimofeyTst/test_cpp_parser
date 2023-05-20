@@ -1,0 +1,1 @@
+int DD(char y,int u) { int i,j; i=y; j=u;}

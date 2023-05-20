@@ -1,0 +1,1 @@
+2double DD(float y,int u) { int l,m; int r; l=y; m=u; };
