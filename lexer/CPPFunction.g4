@@ -1,9 +1,9 @@
 grammar CPPFunction;
 
 // Parser rules
-function: type_specifier identifier '(' parameter_list ')' compound_statement;
+function: type_specifier identifier '(' parameter_list? ')' compound_statement?;
 
-type_specifier: 'int' | 'char' | 'float' | 'double' | 'bool';
+type_specifier: 'void' | 'int' | 'char' | 'float' | 'double' | 'bool';
 
 identifier: ID;
 

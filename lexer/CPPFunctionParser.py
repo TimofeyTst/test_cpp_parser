@@ -7,30 +7,32 @@ import sys
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\21")
-        buf.write("P\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\22")
+        buf.write("S\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
         buf.write("\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\3\2\3\2\3\2\3\2")
-        buf.write("\3\2\3\2\3\2\3\3\3\3\3\4\3\4\3\5\3\5\3\5\7\5\'\n\5\f\5")
-        buf.write("\16\5*\13\5\3\6\3\6\3\6\3\7\3\7\3\7\7\7\62\n\7\f\7\16")
-        buf.write("\7\65\13\7\3\7\3\7\3\b\3\b\3\b\3\b\3\t\3\t\3\t\7\t@\n")
-        buf.write("\t\f\t\16\tC\13\t\3\n\3\n\3\n\3\13\3\13\3\13\3\13\3\f")
-        buf.write("\3\f\5\fN\n\f\3\f\2\2\r\2\4\6\b\n\f\16\20\22\24\26\2\3")
-        buf.write("\3\2\5\t\2I\2\30\3\2\2\2\4\37\3\2\2\2\6!\3\2\2\2\b#\3")
-        buf.write("\2\2\2\n+\3\2\2\2\f.\3\2\2\2\168\3\2\2\2\20<\3\2\2\2\22")
-        buf.write("D\3\2\2\2\24G\3\2\2\2\26M\3\2\2\2\30\31\5\4\3\2\31\32")
-        buf.write("\5\6\4\2\32\33\7\3\2\2\33\34\5\b\5\2\34\35\7\4\2\2\35")
-        buf.write("\36\5\f\7\2\36\3\3\2\2\2\37 \t\2\2\2 \5\3\2\2\2!\"\7\17")
-        buf.write("\2\2\"\7\3\2\2\2#(\5\n\6\2$%\7\n\2\2%\'\5\n\6\2&$\3\2")
-        buf.write("\2\2\'*\3\2\2\2(&\3\2\2\2()\3\2\2\2)\t\3\2\2\2*(\3\2\2")
-        buf.write("\2+,\5\4\3\2,-\5\6\4\2-\13\3\2\2\2.\63\7\13\2\2/\62\5")
-        buf.write("\16\b\2\60\62\5\22\n\2\61/\3\2\2\2\61\60\3\2\2\2\62\65")
-        buf.write("\3\2\2\2\63\61\3\2\2\2\63\64\3\2\2\2\64\66\3\2\2\2\65")
-        buf.write("\63\3\2\2\2\66\67\7\f\2\2\67\r\3\2\2\289\5\4\3\29:\5\20")
-        buf.write("\t\2:;\7\r\2\2;\17\3\2\2\2<A\5\6\4\2=>\7\n\2\2>@\5\6\4")
-        buf.write("\2?=\3\2\2\2@C\3\2\2\2A?\3\2\2\2AB\3\2\2\2B\21\3\2\2\2")
-        buf.write("CA\3\2\2\2DE\5\24\13\2EF\7\r\2\2F\23\3\2\2\2GH\5\6\4\2")
-        buf.write("HI\7\16\2\2IJ\5\26\f\2J\25\3\2\2\2KN\5\6\4\2LN\7\20\2")
-        buf.write("\2MK\3\2\2\2ML\3\2\2\2N\27\3\2\2\2\7(\61\63AM")
+        buf.write("\5\2\35\n\2\3\2\3\2\5\2!\n\2\3\3\3\3\3\4\3\4\3\5\3\5\3")
+        buf.write("\5\7\5*\n\5\f\5\16\5-\13\5\3\6\3\6\3\6\3\7\3\7\3\7\7\7")
+        buf.write("\65\n\7\f\7\16\78\13\7\3\7\3\7\3\b\3\b\3\b\3\b\3\t\3\t")
+        buf.write("\3\t\7\tC\n\t\f\t\16\tF\13\t\3\n\3\n\3\n\3\13\3\13\3\13")
+        buf.write("\3\13\3\f\3\f\5\fQ\n\f\3\f\2\2\r\2\4\6\b\n\f\16\20\22")
+        buf.write("\24\26\2\3\3\2\5\n\2N\2\30\3\2\2\2\4\"\3\2\2\2\6$\3\2")
+        buf.write("\2\2\b&\3\2\2\2\n.\3\2\2\2\f\61\3\2\2\2\16;\3\2\2\2\20")
+        buf.write("?\3\2\2\2\22G\3\2\2\2\24J\3\2\2\2\26P\3\2\2\2\30\31\5")
+        buf.write("\4\3\2\31\32\5\6\4\2\32\34\7\3\2\2\33\35\5\b\5\2\34\33")
+        buf.write("\3\2\2\2\34\35\3\2\2\2\35\36\3\2\2\2\36 \7\4\2\2\37!\5")
+        buf.write("\f\7\2 \37\3\2\2\2 !\3\2\2\2!\3\3\2\2\2\"#\t\2\2\2#\5")
+        buf.write("\3\2\2\2$%\7\20\2\2%\7\3\2\2\2&+\5\n\6\2\'(\7\13\2\2(")
+        buf.write("*\5\n\6\2)\'\3\2\2\2*-\3\2\2\2+)\3\2\2\2+,\3\2\2\2,\t")
+        buf.write("\3\2\2\2-+\3\2\2\2./\5\4\3\2/\60\5\6\4\2\60\13\3\2\2\2")
+        buf.write("\61\66\7\f\2\2\62\65\5\16\b\2\63\65\5\22\n\2\64\62\3\2")
+        buf.write("\2\2\64\63\3\2\2\2\658\3\2\2\2\66\64\3\2\2\2\66\67\3\2")
+        buf.write("\2\2\679\3\2\2\28\66\3\2\2\29:\7\r\2\2:\r\3\2\2\2;<\5")
+        buf.write("\4\3\2<=\5\20\t\2=>\7\16\2\2>\17\3\2\2\2?D\5\6\4\2@A\7")
+        buf.write("\13\2\2AC\5\6\4\2B@\3\2\2\2CF\3\2\2\2DB\3\2\2\2DE\3\2")
+        buf.write("\2\2E\21\3\2\2\2FD\3\2\2\2GH\5\24\13\2HI\7\16\2\2I\23")
+        buf.write("\3\2\2\2JK\5\6\4\2KL\7\17\2\2LM\5\26\f\2M\25\3\2\2\2N")
+        buf.write("Q\5\6\4\2OQ\7\21\2\2PN\3\2\2\2PO\3\2\2\2Q\27\3\2\2\2\t")
+        buf.write("\34 +\64\66DP")
         return buf.getvalue()
 
 
@@ -44,13 +46,14 @@ class CPPFunctionParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'('", "')'", "'int'", "'char'", "'float'", 
-                     "'double'", "'bool'", "','", "'{'", "'}'", "';'", "'='" ]
+    literalNames = [ "<INVALID>", "'('", "')'", "'void'", "'int'", "'char'", 
+                     "'float'", "'double'", "'bool'", "','", "'{'", "'}'", 
+                     "';'", "'='" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "ID", "INT_CONST", "WS" ]
+                      "<INVALID>", "<INVALID>", "ID", "INT_CONST", "WS" ]
 
     RULE_function = 0
     RULE_type_specifier = 1
@@ -81,9 +84,10 @@ class CPPFunctionParser ( Parser ):
     T__9=10
     T__10=11
     T__11=12
-    ID=13
-    INT_CONST=14
-    WS=15
+    T__12=13
+    ID=14
+    INT_CONST=15
+    WS=16
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -133,6 +137,7 @@ class CPPFunctionParser ( Parser ):
 
         localctx = CPPFunctionParser.FunctionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_function)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 22
@@ -141,12 +146,24 @@ class CPPFunctionParser ( Parser ):
             self.identifier()
             self.state = 24
             self.match(CPPFunctionParser.T__0)
-            self.state = 25
-            self.parameter_list()
             self.state = 26
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CPPFunctionParser.T__2) | (1 << CPPFunctionParser.T__3) | (1 << CPPFunctionParser.T__4) | (1 << CPPFunctionParser.T__5) | (1 << CPPFunctionParser.T__6) | (1 << CPPFunctionParser.T__7))) != 0):
+                self.state = 25
+                self.parameter_list()
+
+
+            self.state = 28
             self.match(CPPFunctionParser.T__1)
-            self.state = 27
-            self.compound_statement()
+            self.state = 30
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if _la==CPPFunctionParser.T__9:
+                self.state = 29
+                self.compound_statement()
+
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -183,9 +200,9 @@ class CPPFunctionParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 29
+            self.state = 32
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CPPFunctionParser.T__2) | (1 << CPPFunctionParser.T__3) | (1 << CPPFunctionParser.T__4) | (1 << CPPFunctionParser.T__5) | (1 << CPPFunctionParser.T__6))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CPPFunctionParser.T__2) | (1 << CPPFunctionParser.T__3) | (1 << CPPFunctionParser.T__4) | (1 << CPPFunctionParser.T__5) | (1 << CPPFunctionParser.T__6) | (1 << CPPFunctionParser.T__7))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -227,7 +244,7 @@ class CPPFunctionParser ( Parser ):
         self.enterRule(localctx, 4, self.RULE_identifier)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 31
+            self.state = 34
             self.match(CPPFunctionParser.ID)
         except RecognitionException as re:
             localctx.exception = re
@@ -271,17 +288,17 @@ class CPPFunctionParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 33
+            self.state = 36
             self.parameter()
-            self.state = 38
+            self.state = 41
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==CPPFunctionParser.T__7:
-                self.state = 34
-                self.match(CPPFunctionParser.T__7)
-                self.state = 35
+            while _la==CPPFunctionParser.T__8:
+                self.state = 37
+                self.match(CPPFunctionParser.T__8)
+                self.state = 38
                 self.parameter()
-                self.state = 40
+                self.state = 43
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -327,9 +344,9 @@ class CPPFunctionParser ( Parser ):
         self.enterRule(localctx, 8, self.RULE_parameter)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 41
+            self.state = 44
             self.type_specifier()
-            self.state = 42
+            self.state = 45
             self.identifier()
         except RecognitionException as re:
             localctx.exception = re
@@ -380,32 +397,32 @@ class CPPFunctionParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 44
-            self.match(CPPFunctionParser.T__8)
-            self.state = 49
+            self.state = 47
+            self.match(CPPFunctionParser.T__9)
+            self.state = 52
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CPPFunctionParser.T__2) | (1 << CPPFunctionParser.T__3) | (1 << CPPFunctionParser.T__4) | (1 << CPPFunctionParser.T__5) | (1 << CPPFunctionParser.T__6) | (1 << CPPFunctionParser.ID))) != 0):
-                self.state = 47
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CPPFunctionParser.T__2) | (1 << CPPFunctionParser.T__3) | (1 << CPPFunctionParser.T__4) | (1 << CPPFunctionParser.T__5) | (1 << CPPFunctionParser.T__6) | (1 << CPPFunctionParser.T__7) | (1 << CPPFunctionParser.ID))) != 0):
+                self.state = 50
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
-                if token in [CPPFunctionParser.T__2, CPPFunctionParser.T__3, CPPFunctionParser.T__4, CPPFunctionParser.T__5, CPPFunctionParser.T__6]:
-                    self.state = 45
+                if token in [CPPFunctionParser.T__2, CPPFunctionParser.T__3, CPPFunctionParser.T__4, CPPFunctionParser.T__5, CPPFunctionParser.T__6, CPPFunctionParser.T__7]:
+                    self.state = 48
                     self.declaration()
                     pass
                 elif token in [CPPFunctionParser.ID]:
-                    self.state = 46
+                    self.state = 49
                     self.statement()
                     pass
                 else:
                     raise NoViableAltException(self)
 
-                self.state = 51
+                self.state = 54
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 52
-            self.match(CPPFunctionParser.T__9)
+            self.state = 55
+            self.match(CPPFunctionParser.T__10)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -448,12 +465,12 @@ class CPPFunctionParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_declaration)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 54
+            self.state = 57
             self.type_specifier()
-            self.state = 55
+            self.state = 58
             self.identifier_list()
-            self.state = 56
-            self.match(CPPFunctionParser.T__10)
+            self.state = 59
+            self.match(CPPFunctionParser.T__11)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -496,17 +513,17 @@ class CPPFunctionParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 58
+            self.state = 61
             self.identifier()
-            self.state = 63
+            self.state = 66
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==CPPFunctionParser.T__7:
-                self.state = 59
-                self.match(CPPFunctionParser.T__7)
-                self.state = 60
+            while _la==CPPFunctionParser.T__8:
+                self.state = 62
+                self.match(CPPFunctionParser.T__8)
+                self.state = 63
                 self.identifier()
-                self.state = 65
+                self.state = 68
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -548,10 +565,10 @@ class CPPFunctionParser ( Parser ):
         self.enterRule(localctx, 16, self.RULE_statement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 66
+            self.state = 69
             self.assignment_statement()
-            self.state = 67
-            self.match(CPPFunctionParser.T__10)
+            self.state = 70
+            self.match(CPPFunctionParser.T__11)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -594,11 +611,11 @@ class CPPFunctionParser ( Parser ):
         self.enterRule(localctx, 18, self.RULE_assignment_statement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 69
+            self.state = 72
             self.identifier()
-            self.state = 70
-            self.match(CPPFunctionParser.T__11)
-            self.state = 71
+            self.state = 73
+            self.match(CPPFunctionParser.T__12)
+            self.state = 74
             self.expression()
         except RecognitionException as re:
             localctx.exception = re
@@ -640,17 +657,17 @@ class CPPFunctionParser ( Parser ):
         localctx = CPPFunctionParser.ExpressionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_expression)
         try:
-            self.state = 75
+            self.state = 78
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [CPPFunctionParser.ID]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 73
+                self.state = 76
                 self.identifier()
                 pass
             elif token in [CPPFunctionParser.INT_CONST]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 74
+                self.state = 77
                 self.match(CPPFunctionParser.INT_CONST)
                 pass
             else:
