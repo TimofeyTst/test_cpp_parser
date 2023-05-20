@@ -26,13 +26,12 @@ def main(argv):
         # Парсим функцию
         tree = parser.function()
 
-        # Если была ошибка парсинга, выводим сообщение об ошибке красным цветом
         if error_listener.has_error:
             print(f"\033[91mError parsing function: '{line.strip()}'\033[0m")
+            error_listener.printErrors()
         else:
-            # Если парсинг прошел успешно, выводим сообщение о успешном парсинге зеленым цветом
             print(f"\033[92mFunction '{line.strip()}' parsed successfully\033[0m")
-        
+
         print()
 
 if __name__ == '__main__':
