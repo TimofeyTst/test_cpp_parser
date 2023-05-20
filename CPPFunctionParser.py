@@ -7,7 +7,7 @@ import sys
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\20")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\21")
         buf.write("P\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b")
         buf.write("\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\3\2\3\2\3\2\3\2")
         buf.write("\3\2\3\2\3\2\3\3\3\3\3\4\3\4\3\5\3\5\3\5\7\5\'\n\5\f\5")
@@ -15,22 +15,22 @@ def serializedATN():
         buf.write("\7\65\13\7\3\7\3\7\3\b\3\b\3\b\3\b\3\t\3\t\3\t\7\t@\n")
         buf.write("\t\f\t\16\tC\13\t\3\n\3\n\3\n\3\13\3\13\3\13\3\13\3\f")
         buf.write("\3\f\5\fN\n\f\3\f\2\2\r\2\4\6\b\n\f\16\20\22\24\26\2\3")
-        buf.write("\3\2\5\b\2I\2\30\3\2\2\2\4\37\3\2\2\2\6!\3\2\2\2\b#\3")
+        buf.write("\3\2\5\t\2I\2\30\3\2\2\2\4\37\3\2\2\2\6!\3\2\2\2\b#\3")
         buf.write("\2\2\2\n+\3\2\2\2\f.\3\2\2\2\168\3\2\2\2\20<\3\2\2\2\22")
         buf.write("D\3\2\2\2\24G\3\2\2\2\26M\3\2\2\2\30\31\5\4\3\2\31\32")
         buf.write("\5\6\4\2\32\33\7\3\2\2\33\34\5\b\5\2\34\35\7\4\2\2\35")
-        buf.write("\36\5\f\7\2\36\3\3\2\2\2\37 \t\2\2\2 \5\3\2\2\2!\"\7\16")
-        buf.write("\2\2\"\7\3\2\2\2#(\5\n\6\2$%\7\t\2\2%\'\5\n\6\2&$\3\2")
+        buf.write("\36\5\f\7\2\36\3\3\2\2\2\37 \t\2\2\2 \5\3\2\2\2!\"\7\17")
+        buf.write("\2\2\"\7\3\2\2\2#(\5\n\6\2$%\7\n\2\2%\'\5\n\6\2&$\3\2")
         buf.write("\2\2\'*\3\2\2\2(&\3\2\2\2()\3\2\2\2)\t\3\2\2\2*(\3\2\2")
-        buf.write("\2+,\5\4\3\2,-\5\6\4\2-\13\3\2\2\2.\63\7\n\2\2/\62\5\16")
-        buf.write("\b\2\60\62\5\22\n\2\61/\3\2\2\2\61\60\3\2\2\2\62\65\3")
-        buf.write("\2\2\2\63\61\3\2\2\2\63\64\3\2\2\2\64\66\3\2\2\2\65\63")
-        buf.write("\3\2\2\2\66\67\7\13\2\2\67\r\3\2\2\289\5\4\3\29:\5\20")
-        buf.write("\t\2:;\7\f\2\2;\17\3\2\2\2<A\5\6\4\2=>\7\t\2\2>@\5\6\4")
+        buf.write("\2+,\5\4\3\2,-\5\6\4\2-\13\3\2\2\2.\63\7\13\2\2/\62\5")
+        buf.write("\16\b\2\60\62\5\22\n\2\61/\3\2\2\2\61\60\3\2\2\2\62\65")
+        buf.write("\3\2\2\2\63\61\3\2\2\2\63\64\3\2\2\2\64\66\3\2\2\2\65")
+        buf.write("\63\3\2\2\2\66\67\7\f\2\2\67\r\3\2\2\289\5\4\3\29:\5\20")
+        buf.write("\t\2:;\7\r\2\2;\17\3\2\2\2<A\5\6\4\2=>\7\n\2\2>@\5\6\4")
         buf.write("\2?=\3\2\2\2@C\3\2\2\2A?\3\2\2\2AB\3\2\2\2B\21\3\2\2\2")
-        buf.write("CA\3\2\2\2DE\5\24\13\2EF\7\f\2\2F\23\3\2\2\2GH\5\6\4\2")
-        buf.write("HI\7\r\2\2IJ\5\26\f\2J\25\3\2\2\2KN\5\6\4\2LN\7\17\2\2")
-        buf.write("MK\3\2\2\2ML\3\2\2\2N\27\3\2\2\2\7(\61\63AM")
+        buf.write("CA\3\2\2\2DE\5\24\13\2EF\7\r\2\2F\23\3\2\2\2GH\5\6\4\2")
+        buf.write("HI\7\16\2\2IJ\5\26\f\2J\25\3\2\2\2KN\5\6\4\2LN\7\20\2")
+        buf.write("\2MK\3\2\2\2ML\3\2\2\2N\27\3\2\2\2\7(\61\63AM")
         return buf.getvalue()
 
 
@@ -45,12 +45,12 @@ class CPPFunctionParser ( Parser ):
     sharedContextCache = PredictionContextCache()
 
     literalNames = [ "<INVALID>", "'('", "')'", "'int'", "'char'", "'float'", 
-                     "'double'", "','", "'{'", "'}'", "';'", "'='" ]
+                     "'double'", "'bool'", "','", "'{'", "'}'", "';'", "'='" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "ID", "INT_CONST", "WS" ]
+                      "<INVALID>", "ID", "INT_CONST", "WS" ]
 
     RULE_function = 0
     RULE_type_specifier = 1
@@ -80,9 +80,10 @@ class CPPFunctionParser ( Parser ):
     T__8=9
     T__9=10
     T__10=11
-    ID=12
-    INT_CONST=13
-    WS=14
+    T__11=12
+    ID=13
+    INT_CONST=14
+    WS=15
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -184,7 +185,7 @@ class CPPFunctionParser ( Parser ):
             self.enterOuterAlt(localctx, 1)
             self.state = 29
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CPPFunctionParser.T__2) | (1 << CPPFunctionParser.T__3) | (1 << CPPFunctionParser.T__4) | (1 << CPPFunctionParser.T__5))) != 0)):
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CPPFunctionParser.T__2) | (1 << CPPFunctionParser.T__3) | (1 << CPPFunctionParser.T__4) | (1 << CPPFunctionParser.T__5) | (1 << CPPFunctionParser.T__6))) != 0)):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -275,9 +276,9 @@ class CPPFunctionParser ( Parser ):
             self.state = 38
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==CPPFunctionParser.T__6:
+            while _la==CPPFunctionParser.T__7:
                 self.state = 34
-                self.match(CPPFunctionParser.T__6)
+                self.match(CPPFunctionParser.T__7)
                 self.state = 35
                 self.parameter()
                 self.state = 40
@@ -380,15 +381,15 @@ class CPPFunctionParser ( Parser ):
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 44
-            self.match(CPPFunctionParser.T__7)
+            self.match(CPPFunctionParser.T__8)
             self.state = 49
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CPPFunctionParser.T__2) | (1 << CPPFunctionParser.T__3) | (1 << CPPFunctionParser.T__4) | (1 << CPPFunctionParser.T__5) | (1 << CPPFunctionParser.ID))) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << CPPFunctionParser.T__2) | (1 << CPPFunctionParser.T__3) | (1 << CPPFunctionParser.T__4) | (1 << CPPFunctionParser.T__5) | (1 << CPPFunctionParser.T__6) | (1 << CPPFunctionParser.ID))) != 0):
                 self.state = 47
                 self._errHandler.sync(self)
                 token = self._input.LA(1)
-                if token in [CPPFunctionParser.T__2, CPPFunctionParser.T__3, CPPFunctionParser.T__4, CPPFunctionParser.T__5]:
+                if token in [CPPFunctionParser.T__2, CPPFunctionParser.T__3, CPPFunctionParser.T__4, CPPFunctionParser.T__5, CPPFunctionParser.T__6]:
                     self.state = 45
                     self.declaration()
                     pass
@@ -404,7 +405,7 @@ class CPPFunctionParser ( Parser ):
                 _la = self._input.LA(1)
 
             self.state = 52
-            self.match(CPPFunctionParser.T__8)
+            self.match(CPPFunctionParser.T__9)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -452,7 +453,7 @@ class CPPFunctionParser ( Parser ):
             self.state = 55
             self.identifier_list()
             self.state = 56
-            self.match(CPPFunctionParser.T__9)
+            self.match(CPPFunctionParser.T__10)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -500,9 +501,9 @@ class CPPFunctionParser ( Parser ):
             self.state = 63
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==CPPFunctionParser.T__6:
+            while _la==CPPFunctionParser.T__7:
                 self.state = 59
-                self.match(CPPFunctionParser.T__6)
+                self.match(CPPFunctionParser.T__7)
                 self.state = 60
                 self.identifier()
                 self.state = 65
@@ -550,7 +551,7 @@ class CPPFunctionParser ( Parser ):
             self.state = 66
             self.assignment_statement()
             self.state = 67
-            self.match(CPPFunctionParser.T__9)
+            self.match(CPPFunctionParser.T__10)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -596,7 +597,7 @@ class CPPFunctionParser ( Parser ):
             self.state = 69
             self.identifier()
             self.state = 70
-            self.match(CPPFunctionParser.T__10)
+            self.match(CPPFunctionParser.T__11)
             self.state = 71
             self.expression()
         except RecognitionException as re:

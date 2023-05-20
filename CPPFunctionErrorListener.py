@@ -6,5 +6,5 @@ class CPPFunctionErrorListener(ErrorListener):
         self.has_error = False
 
     def syntaxError(self, recognizer, offendingSymbol, line, column, msg, e):
-        print(f"line {line}:{column} {msg}")
+        print(f"\033[93mline {line}:{column} {msg}\033[0m")
         self.has_error = True
